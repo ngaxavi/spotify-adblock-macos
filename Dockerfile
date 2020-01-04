@@ -37,6 +37,6 @@ RUN	apt-get update && apt-get install -y \
 	&& rm -rf /var/lib/apt/lists/*
 
 RUN echo "load-module module-native-protocol-tcp" >> /etc/pulse/default.pa
-RUN git clone https://github.com/abba23/spotify-adblock-linux.git && cd spotify-adblock-linux && make
+RUN git clone https://github.com/AnanthVivekanand/spotify-adblock-macos.git && cd spotify-adblock-macos/adblocker && make
 
 ENTRYPOINT	[ "xterm" ]
